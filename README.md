@@ -2,6 +2,8 @@
 
 A **Streamlit-based web application** that helps users find jobs tailored to their preferences. The application filters jobs by title, location, salary, and keywords, and uses machine learning to cluster and refine search results for more accurate matching.
 
+## APP Link: https://huggingface.co/spaces/burcuonel/Find_Proper_Job
+
 ## Features
 
 - **Salary Parsing**: Cleans and normalizes salary data, converting hourly rates into annual salaries.
