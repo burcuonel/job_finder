@@ -24,21 +24,6 @@ A **Streamlit-based web application** that helps users find jobs tailored to the
    - Performs clustering to group similar jobs together.
 3. **Result Display**: Presents filtered job listings with highlighted keywords and additional details.
 
-### Detailed Explanation: Clustering with TF-IDF and K-means
-
-- **TF-IDF Vectorization**: Converts job titles and descriptions into numerical representations by calculating the importance of each word. This helps in understanding the context and relevance of each job listing.
-  - **Term Frequency (TF)**: Measures how often a word appears in a document.
-  - **Inverse Document Frequency (IDF)**: Gives less weight to common words that appear in many documents (e.g., "the," "and").
-
-- **K-means Clustering**: Groups similar job listings together based on their TF-IDF vectors. This algorithm helps identify patterns in job descriptions and titles, ensuring that the search results are more accurate and relevant.
-  - **Why it’s used**: It helps refine search results by grouping similar jobs, making it easier to match user queries to appropriate clusters.
-  - **How it works**: 
-    1. Initializes `K` centroids and assigns each job to the nearest centroid.
-    2. Updates centroids based on the average position of jobs in each cluster.
-    3. Repeats the process until clusters stabilize.
-
-This combination ensures that users receive tailored job recommendations, even for vague or broad queries.
-
 ## Installation
 
 1. Clone this repository:
